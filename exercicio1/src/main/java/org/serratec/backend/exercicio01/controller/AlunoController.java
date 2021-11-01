@@ -61,19 +61,7 @@ public class AlunoController {
 		return null;
 	}
 	
-//	Não consegui fazer por for each
-//	@PutMapping("{matricula}")
-//    public Aluno alterar(@RequestBody Aluno aluno, @PathVariable Long matricula) {
-//        for(int i = 0; i < lista.size(); i++) {
-//            if(lista.get(i).getMatricula().equals(matricula)) {
-//                Aluno v = new Aluno(aluno.getNome(), aluno.getMatricula(), aluno.getTelefone());
-//                lista.set(i, v);
-//                return v;
-//            }
-//        }
-//        return null;
-//    }
-	
+
 	@DeleteMapping("{matricula}")
 	public void delete(@PathVariable Long matricula){
 		for(Aluno aluno: lista){
